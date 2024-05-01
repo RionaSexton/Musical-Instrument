@@ -1,0 +1,124 @@
+[gd_scene load_steps=12 format=3 uid="uid://cuwrrowhtk8be"]
+
+[ext_resource type="Texture2D" uid="uid://bdxsvmy26vwem" path="res://Screenshot 2024-02-10 011826.png" id="1_gb8gl"]
+[ext_resource type="Script" path="res://Player.gd" id="1_gqxgc"]
+[ext_resource type="AudioStream" uid="uid://byjgycglv0ip0" path="res://Xylophone 8.mp3" id="2_1gymj"]
+[ext_resource type="AudioStream" uid="uid://ogmfpa4amcto" path="res://Xylophone 1.mp3" id="2_5ksfm"]
+[ext_resource type="AudioStream" uid="uid://ch466g741d1tl" path="res://Xylophone 7.mp3" id="3_1yve8"]
+[ext_resource type="Texture2D" uid="uid://cdigt7x727pf4" path="res://—Pngtree—early education tap small xylophone_3925706.png" id="3_xa6bf"]
+[ext_resource type="AudioStream" uid="uid://cvy0q5diojdth" path="res://Xylophone 6.mp3" id="4_kmomw"]
+[ext_resource type="AudioStream" uid="uid://7tr8a1qnispw" path="res://Xylophone 5.mp3" id="5_dbeyd"]
+[ext_resource type="AudioStream" uid="uid://dtjmh5exdcpt0" path="res://Xylophone 4.mp3" id="6_8so3i"]
+[ext_resource type="AudioStream" uid="uid://bxuylwtsrs2me" path="res://Xylophone 3.mp3" id="7_mx00v"]
+[ext_resource type="AudioStream" uid="uid://bmj7a1ablaxp3" path="res://Xylophone 2.mp3" id="8_n5lo6"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(43, 58)
+scale = Vector2(10.4815, 16.8)
+
+[node name="Button" type="Button" parent="."]
+offset_top = 10.9524
+offset_right = 8.0
+offset_bottom = 18.9524
+script = ExtResource("1_gqxgc")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Button"]
+stream = ExtResource("2_1gymj")
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 12.5936
+offset_top = 9.82143
+offset_right = 20.5936
+offset_bottom = 17.8214
+scale = Vector2(1.06111, 1.2455)
+script = ExtResource("1_gqxgc")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Button2"]
+stream = ExtResource("3_1yve8")
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 24.7102
+offset_top = 8.57143
+offset_right = 32.7102
+offset_bottom = 16.5714
+scale = Vector2(1.10777, 1.53201)
+script = ExtResource("1_gqxgc")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Button3"]
+stream = ExtResource("4_kmomw")
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 37.2084
+offset_top = 8.03572
+offset_right = 45.2084
+offset_bottom = 16.0357
+scale = Vector2(1.0058, 1.68709)
+script = ExtResource("1_gqxgc")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Button4"]
+stream = ExtResource("5_dbeyd")
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 49.9928
+offset_top = 6.78572
+offset_right = 57.9928
+offset_bottom = 14.7857
+scale = Vector2(1.06111, 1.91844)
+script = ExtResource("1_gqxgc")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Button5"]
+stream = ExtResource("6_8so3i")
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 62.2048
+offset_top = 5.77381
+offset_right = 70.2048
+offset_bottom = 13.7738
+scale = Vector2(1.06111, 2.21239)
+script = ExtResource("1_gqxgc")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Button6"]
+stream = ExtResource("7_mx00v")
+
+[node name="Button7" type="Button" parent="."]
+offset_left = 74.9893
+offset_top = 4.58333
+offset_right = 82.9893
+offset_bottom = 12.5833
+scale = Vector2(1.06111, 2.45366)
+script = ExtResource("1_gqxgc")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Button7"]
+stream = ExtResource("8_n5lo6")
+
+[node name="Button8" type="Button" parent="."]
+offset_left = 87.2013
+offset_top = 4.16667
+offset_right = 95.2013
+offset_bottom = 12.1667
+scale = Vector2(1.02101, 2.69911)
+script = ExtResource("1_gqxgc")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Button8"]
+stream = ExtResource("2_5ksfm")
+
+[node name="Screenshot2024-02-10011826" type="Sprite2D" parent="Button8"]
+position = Vector2(-42.4232, 5.44712)
+rotation = -1.55287
+scale = Vector2(0.0709345, 0.229201)
+skew = -0.0153581
+texture = ExtResource("1_gb8gl")
+
+[node name="—pngtree—earlyEducationTapSmallXylophone3925706" type="Sprite2D" parent="Button8"]
+position = Vector2(-38.592, 4.85169)
+scale = Vector2(0.0547535, 0.00902574)
+texture = ExtResource("3_xa6bf")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
+[connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]
+[connection signal="pressed" from="Button4" to="Button4" method="_on_pressed"]
+[connection signal="pressed" from="Button5" to="Button5" method="_on_pressed"]
+[connection signal="pressed" from="Button6" to="Button6" method="_on_pressed"]
+[connection signal="pressed" from="Button7" to="Button7" method="_on_pressed"]
+[connection signal="pressed" from="Button8" to="Button8" method="_on_pressed"]
